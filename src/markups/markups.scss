@@ -1,0 +1,156 @@
+#markup,
+#markup-list{
+  display: none;
+}
+.markup-list{
+  position: fixed;
+  top: 10%;
+  left: 20px;
+  width: 160px;
+  background-color: rgba(34,34,34,0.7);
+  border-radius: 6px;
+  z-index: 99999;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px;
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
+  h6{
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  ul,
+  li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 24px;
+  }
+  ul{
+    margin-top: 10px;
+    display: none;
+    li{
+      padding-right: 10px;
+      position: relative;
+      &:hover i{
+        display: block;
+      }
+      i{
+        font-style: normal;
+        color: #f38b8b;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+        cursor: pointer;
+        line-height: 24px;
+      }
+      a{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+        &:hover{
+          color: #ddd;
+        }
+      }
+    }
+  }
+  .markup-input{
+    display: none;
+  }
+}
+.markup-btn{
+  font-size: 12px;
+  padding: 4px 6px;
+  background-color: #999;
+  border-radius: 4px;
+  float: right;
+  font-weight: normal;
+  margin-left: 5px;
+  &:hover{
+    background-color: #aaa;
+  }
+}
+.markup-input{
+  padding-top: 10px;
+  input,
+  textarea{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    width: 110px;
+    line-height: 18px;
+    padding: 0 5px;
+    box-sizing: border-box;
+  }
+}
+.markup3D-label{
+  width: 320px;
+  background-color: rgba(34,34,34,0.7);
+  border-radius: 6px;
+  height: auto;
+  max-height: 480px;
+  position: relative;
+  color: #fff;
+  padding: 5px 5px;
+  z-index: 9999999;
+  .markup-btn{
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+.markup3D-form{
+  label{
+    width: 100%;
+    display: block;
+    line-height: 24px;
+    margin-bottom: 5px;
+    span{
+      float: left;
+      font-size: 14px;
+      width: 35px;
+    }
+  }
+  input,
+  textarea{
+    width: 285px;
+    line-height: 24px;
+  }
+  textarea{
+    height: 72px;
+    display: block;
+    line-height: 22px;
+  }
+}
+.markup3D-info{
+  h6{
+    font-size: 14px;
+    margin: 0;
+    line-height: 24px;
+  }
+  p{
+    font-size: 12px;
+    margin: 0;
+    line-height: 18px;
+    padding-bottom: 5px;
+  }
+  img,
+  video{
+    width: 100%;
+  }
+  a{
+    font-size: 14px;
+    color: #fff;
+    &:hover{
+      color: #ccc;
+    }
+  }
+}
